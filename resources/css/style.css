@@ -1,0 +1,11 @@
+/*__________border-box reset__________*/
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+}
+
+/*__________border-box compare__________*/
