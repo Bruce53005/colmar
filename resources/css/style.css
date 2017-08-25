@@ -8,8 +8,12 @@
   }
 
 /*__________general__________*/
-  body{
-    background: pink;
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+body{
+    background: #CEFFC0;
   }
 
   h1 { font-size: 2rem; }
@@ -26,58 +30,129 @@
   main{
     width: 960px;
   }
-  p{
+  p{ 
     font-size: 1rem;
   }
 
 /*__________header__________*/
 
-header{
-  display: flex;
-  justify-content: space-between;
-  align-content: center;
-  font-size: 1rem;
-  /* position: fixed; doesn't center */
-  max-width: 960px;
-  margin: 0 auto;
+header {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
   padding: 1rem 0;
+  border-bottom: solid 1px black;
   background-color: lightseagreen;
   color: black;
 }
-.logo{
+
+header .content {
   display: flex;
   align-items: center;
+  padding: 1 rem 0;
 }
-.logo img{
+
+header .logo{
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+.logo a img{
   height: 2rem;
   padding-left: 1.5rem;
 }
-header p{
+.logo p{
   font-weight: bold;
 }
-header span{
+.logo span{
   font-weight: lighter;
 }
 
 /*__________Header Nav Menu__________*/
 
-nav{
-  display:flex;
-  margin-right: .5rem;
-}
-nav ul{
+header nav ul {
   display: flex;
-  list-style: none;
-  justify-content: space-around;
-  align-items: center;
 }
-nav li{
-  padding-right: 1rem;
+
+nav li {
+  padding-right: 3.5rem;
 }
-a{
+
+nav a {
+  vertical-align: bottom;
+  line-height: 1.6;
+  font-size: 1rem;
   text-decoration: none;
-  color: black;
+  color: #4a4a4a;
 }
-.small{
+
+header .icon {
+  width: 1rem;
+  padding-left: .75rem;
+}
+
+header .mobile {
   display: none;
 }
+
+@media only screen and (max-width: 760px) {
+  header .desktop {
+    display: none;
+  }
+
+  header .mobile {
+    display: block;
+    width: 100%;
+  }
+
+  header .content {
+    padding: .5rem 0;
+  }
+
+  header .mobile ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+
+  header .mobile li {
+    padding: 0;
+  }
+
+  header .mobile .button {
+    padding: .1875rem .5rem;
+    background-color: #9dc20b;
+    line-height: 1.6;
+    color: white;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+p, h1, h3, li{
+  background-color: pink;
+}
+
+
+/*__________Ghost Debug Code___________*/
+
+/* 
+* {
+  background: #000 !important;
+  color: #0f0 !important;
+  outline: solid #f00 1px !important;
+}
+ */
