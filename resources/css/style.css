@@ -9,11 +9,11 @@
 
 /*__________General__________*/
   html {
-    font-family: "Roboto", sans-serif;
+    font-family: Roboto, Damion, Rubik, sans-serif;
     font-size: 16px;
-  }
+    }
   body{
-      background: #CEFFC0;
+    background: #CEFFC0;
     }
 
     h1 { font-size: 2rem; }
@@ -128,9 +128,12 @@
     line-height: 1.6;
     color: white;
   }
-}
+  }
 
-
+/*__________Main__________*/
+  main{
+    margin-top: 4.19rem;
+  }
 
 /*__________Footer__________*/
   footer {
